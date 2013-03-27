@@ -623,7 +623,8 @@ Copyright (c) 2011 by Harvest
         this.form_field_jq.trigger("liszt:maxselected", {
           chosen: this
         });
-        return false;
+        // FIXME: UrbanCompass hack to only *display* N selected items.
+        // return false;
       }
       dd_top = this.is_multiple ? this.container.height() : this.container.height() - 1;
       this.form_field_jq.trigger("liszt:showing_dropdown", {
